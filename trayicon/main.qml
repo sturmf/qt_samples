@@ -25,7 +25,7 @@ ApplicationWindow {
 
     MainForm {
         anchors.fill: parent
-        button.onClicked: model.refresh()
+        button.onClicked: myModel.refresh()
     }
 
     Timer {
