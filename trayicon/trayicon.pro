@@ -5,7 +5,8 @@ QT += qml quick widgets xml
 CONFIG += c++11
 
 SOURCES += main.cpp \
-    model.cpp
+    model.cpp \
+    trayicon.cpp
 
 RESOURCES += qml.qrc
 
@@ -18,4 +19,5 @@ QML_IMPORT_PATH =
 include(deployment.pri)
 
 HEADERS += \
-    model.h
+    model.h \
+    trayicon.h

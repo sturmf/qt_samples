@@ -35,15 +35,4 @@ ApplicationWindow {
         interval: 3600000 // every hour in ms
         onTriggered: myModel.refresh()
     }
-
-    function trayIconClicked() { // this should have the "reason" parameter to decide if was a single click
-        console.log("tray item")
-        if (!visible) {
-            showNormal()
-            raise()
-        } else {
-            hide()
-        }
-    }
-
 }
