@@ -5,8 +5,7 @@ QT += qml quick widgets xml
 CONFIG += c++11
 
 SOURCES += main.cpp \
-    model.cpp \
-    trayicon.cpp
+    model.cpp
 
 RESOURCES += qml.qrc
 

@@ -35,4 +35,15 @@ ApplicationWindow {
         interval: 3600000 // every hour in ms
         onTriggered: myModel.refresh()
     }
+
+
+    function trayIconTriggered() {
+        console.log("tray item")
+        if (!visible) {
+            showNormal()
+            raise()
+        } else {
+            hide()
+        }
+    }
 }
