@@ -48,7 +48,7 @@ int main(int argc, char *argv[])
     trayIconMenu->addAction(quitAction);
 
     TrayIcon *trayIcon = new TrayIcon(rootObject);
-    // We first foward the activated signal back into the trayIcon, if it was a left click this will emit a triggered signal
+    // We first foward the activated signal of the QSystemTrayIcon back into the TrayIcon, if it was a left click this will emit a triggered signal
     QObject::connect(trayIcon, SIGNAL(activated(QSystemTrayIcon::ActivationReason)), trayIcon, SLOT(trayIconActivated(QSystemTrayIcon::ActivationReason)));
     QObject::connect(trayIcon, SIGNAL(triggered()), rootObject, SLOT(trayIconTriggered()));
 
